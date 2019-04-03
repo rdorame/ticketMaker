@@ -14,7 +14,7 @@ Android Studio...
 ```
 
 Screenshots
-![alt tag](https://raw.githubusercontent.com/rdorame/proBio/rdorame/Screenshots/HomeScreen.png)
+![alt tag](https://raw.githubusercontent.com/rdorame/ticketMaker/rdorame/Screenshots/HomeScreen.png)
 
 
 ## Deployment
