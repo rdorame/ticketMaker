@@ -4,7 +4,6 @@ A simple ticket maker implementing Room database, Androidx and Bluetooth printer
 
 ### Prerequisites
 
-Android Studio...
 
 
 ### Installing
@@ -13,7 +12,7 @@ Android Studio...
 
 ```
 
-Screenshots
+### Screenshots
 ![alt tag](https://raw.githubusercontent.com/rdorame/ticketMaker/rdorame/Screenshots/HomeScreen.png)
 
 
