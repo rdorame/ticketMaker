@@ -3,6 +3,7 @@ package com.example.ticketmaker.Products
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
@@ -29,7 +30,7 @@ class AddEditProductActivity : AppCompatActivity() {
         if (intent.hasExtra(EXTRA_ID)) {
             title = "Edit Product"
             edit_text_title.setText(intent.getStringExtra(EXTRA_CODE))
-            number_picker_priority.value = intent.getIntExtra(EXTRA_PRICE, 1)
+            edit_text_price.setText(intent.getDoubleExtra(EXTRA_PRICE, 1.0).toString())
             edit_text_description.setText(intent.getStringExtra(EXTRA_DESCRIPTION))
         } else {
             title = "Add Product"
@@ -57,10 +58,11 @@ class AddEditProductActivity : AppCompatActivity() {
             Toast.makeText(this, "Can not insert empty product!", Toast.LENGTH_SHORT).show()
             return
         }
-
+        Log.d("VAlues", "${edit_text_price.text}")
+        val numeric : String = edit_text_price.text.toString()
         val data = Intent().apply {
             putExtra(EXTRA_CODE, edit_text_title.text.toString())
-            putExtra(EXTRA_PRICE, number_picker_priority.value)
+            putExtra(EXTRA_PRICE, numeric.toDouble())
             putExtra(EXTRA_DESCRIPTION, edit_text_description.text.toString())
             if (intent.getIntExtra(EXTRA_ID, -1) != -1) {
                 putExtra(
