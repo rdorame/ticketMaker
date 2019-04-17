@@ -13,31 +13,16 @@ class SharedPrefs(private val context: Context?)  {
     /*
     * Specific functions/ info
     * */
-    fun getIP (): String? {
-        return getPrefs(context!!).getString("IPADDRESS", "")
-    }
-
-    fun getToken (): String? {
-        return getPrefs(context!!).getString("APITOKEN", "Y2Z3cHJk-103534-1551469047000-R.WILSON")
-    }
-
-    fun getDatabase (): String? {
-        return getPrefs(context!!).getString("DATABASE", "")
-    }
-
-    fun getLang (): String? {
-        return getPrefs(context!!).getString("LANG", "EN")
-    }
-
-    fun getURL() : String?{
-        return "http://${getPrefs(context!!).getString("IPADDRESS", "")}/WebServicesCellFusion/"
-    }
 
     fun resetCredentials(context : Context){
         save(context, "U_ID", "")
         save(context, "U_NAME", "")
         save(context, "U_LAST", "")
         save(context, "U_PASS", "")
+        save(context,"SESSION", "Not Logged")
+    }
+
+    fun logOut(context : Context){
         save(context,"SESSION", "Not Logged")
     }
 

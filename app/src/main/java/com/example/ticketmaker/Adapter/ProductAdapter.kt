@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.ticketmaker.Room.Product
+import com.example.ticketmaker.Room.Dataclass.Product
 import com.example.ticketmaker.R
 import kotlinx.android.synthetic.main.product_item.view.*
 
@@ -62,7 +62,7 @@ class ProductAdapter : ListAdapter<Product, ProductAdapter.ProductHolder>(DIFF_C
     }
 
     interface OnItemClickListener {
-        fun onItemClick(note: Product)
+        fun onItemClick(product: Product)
     }
 
     fun setOnItemClickListener(listener: OnItemClickListener) {

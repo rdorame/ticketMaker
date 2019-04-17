@@ -6,13 +6,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import android.text.InputType
 import android.util.Log
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import com.example.ticketmaker.Class.User
 import com.example.ticketmaker.Common.SharedPrefs
+import com.example.ticketmaker.Ticket.TicketList
 import kotlinx.android.synthetic.main.activity_ticket_list.*
 
 class LoginActivity : AppCompatActivity() {

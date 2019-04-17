@@ -6,4 +6,15 @@
 
     <color name="colorTitle">#000</color>
     <color name="colorSubTitle">#1F1F1F</color>
+
+    <color name="button_main">#18c117</color>
+    <color name="button_dark">#0fa466</color>
+    <color name="button_unable">#cccccc</color>
+    <color name="disconnet_color">#ea0923</color>
+
+    <color name="light_gray">#CCCCCC</color>
+    <color name="near_black">#222222</color>
+    <color name="zebra_blue">#00769F</color>
+    <color name="zebra_yellow">#FFD200</color>
+    <color name="zebra_red">#D13138</color>
 </resources>

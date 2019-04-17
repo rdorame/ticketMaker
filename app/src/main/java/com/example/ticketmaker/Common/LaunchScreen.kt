@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.example.ticketmaker.LoginActivity
 import com.example.ticketmaker.R
-import com.example.ticketmaker.TicketList
+import com.example.ticketmaker.Ticket.TicketList
 
 class LaunchScreen : AppCompatActivity() {
 

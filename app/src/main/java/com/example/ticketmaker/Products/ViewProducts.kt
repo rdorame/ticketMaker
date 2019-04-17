@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ticketmaker.Adapter.ProductAdapter
 import com.example.ticketmaker.R
-import com.example.ticketmaker.Room.Product
-import com.example.ticketmaker.Room.ProductViewModel
+import com.example.ticketmaker.Room.Dataclass.Product
+import com.example.ticketmaker.Room.ViewModel.ProductViewModel
 
 import kotlinx.android.synthetic.main.activity_view_products.*
 
@@ -43,7 +43,7 @@ class ViewProducts : AppCompatActivity() {
         recycler_view.layoutManager = LinearLayoutManager(this)
         recycler_view.setHasFixedSize(true)
 
-        var adapter = ProductAdapter()
+        val adapter = ProductAdapter()
         recycler_view.adapter = adapter
 
         productViewModel = ViewModelProviders.of(this).get(ProductViewModel::class.java)
@@ -82,24 +82,6 @@ class ViewProducts : AppCompatActivity() {
         })
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        return when (item?.itemId) {
-            R.id.delete_all_products -> {
-                productViewModel.deleteAllProducts()
-                Toast.makeText(this, "All products deleted!", Toast.LENGTH_SHORT).show()
-                true
-            }
-            else -> {
-                super.onOptionsItemSelected(item)
-            }
-        }
-    }
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -130,7 +112,6 @@ class ViewProducts : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Product not saved!", Toast.LENGTH_SHORT).show()
         }
-
 
     }
 

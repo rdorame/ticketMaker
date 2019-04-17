@@ -28,12 +28,12 @@ class AddEditProductActivity : AppCompatActivity() {
         supportActionBar?.setHomeAsUpIndicator(R.drawable.abc_ab_share_pack_mtrl_alpha)
 
         if (intent.hasExtra(EXTRA_ID)) {
-            title = "Edit Product"
+            title = "Editar producto"
             edit_text_title.setText(intent.getStringExtra(EXTRA_CODE))
             edit_text_price.setText(intent.getDoubleExtra(EXTRA_PRICE, 1.0).toString())
             edit_text_description.setText(intent.getStringExtra(EXTRA_DESCRIPTION))
         } else {
-            title = "Add Product"
+            title = "Agregar producto"
         }
     }
 

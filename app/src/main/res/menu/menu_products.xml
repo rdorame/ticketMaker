@@ -3,7 +3,7 @@
 
     <item
             android:id="@+id/delete_all_products"
-            android:title="Delete All Products"
+            android:title="Borrar todos los productos"
             app:showAsAction="never"/>
 
 </menu>
