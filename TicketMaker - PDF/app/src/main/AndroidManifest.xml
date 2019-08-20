@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.ticketmaker">
+
+    <uses-feature
+            android:name="android.hardware.usb.host"
+            android:required="true"/>
+
+    <uses-permission android:name="android.hardware.usb.UsbAccessory"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="TicketBuddy"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".UserInfo">
+        </activity>
+        <activity
+                android:name=".Ticket.SelectProducts"
+                android:label="Seleciona los productos">
+        </activity>
+        <activity
+                android:name=".Ticket.GeneralInfo"
+                android:label="Información general">
+        </activity>
+        <activity
+                android:name=".Ticket.TicketSelection"
+                android:label="Selecciona el tipo de ticket">
+        </activity>
+        <activity
+                android:name=".PosActivity"
+                android:label="Imprimir ticket">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:label="Configuración de la impresora">
+        </activity>
+        <activity
+                android:name=".SetPrinter"
+                android:label="Configuración de la impresora">
+        </activity>
+
+        <service android:name="net.posprinter.service.PosprinterService"/>
+
+        <activity
+                android:name=".Ticket.TicketTemplate"
+                android:label="Vista del ticket"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Products.ViewProducts"
+                android:label="Productos registrados"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Products.AddEditProductActivity"
+                android:label="Agregar un producto"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Ticket.ValidateTicketInfo"
+                android:label="@string/title_activity_validate_ticket_info"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Common.LaunchScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Example"
+                android:label="@string/title_activity_example"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".CreateUserActivity"
+                android:label="Creación de usuario"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".LoginActivity"
+                android:label="Ingreso de usuarios"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Ticket.ViewTicket"
+                android:label="Información del ticket"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Ticket.TicketList"
+                android:label="Mis tickets"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+    </application>
+
+</manifest>

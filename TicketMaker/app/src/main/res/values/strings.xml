@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">TicketMaker</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_example">Example</string>
+    <string name="title_activity_validate_ticket_info">ValidateTicketInfo</string>
+    <string name="title_activity_ticket_process">TicketProcess</string>
+    <string name="tab_text_1">Información básica</string>
+    <string name="tab_text_2">Productos</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_create_product">CreateProductActivity</string>
+    <string name="title_activity_view_products">ViewProducts</string>
+    <string name="title_activity_ticket_template">TicketTemplate</string>
+
+
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="port">
+        <item>NET</item>
+        <item>BLE</item>
+        <item>USB</item>
+    </string-array>
+    <string-array name="error_level">
+        <item>7%</item>
+        <item>15%</item>
+        <item>25%</item>
+        <item>30%</item>
+    </string-array>
+    <string name="connect">Conectar</string>
+    <string name="discon">Desconectar</string>
+    <string name="hint">Ingrese IP</string>
+    <string name="contextandcode">print context,lineAndBarCode</string>
+    <string name="read">Leyendo el buffer</string>
+    <string name="image">Imprimir ticket</string>
+    <string name="image1">Imprimir ticket</string>
+    <string name="text">Print text and cutpaper</string>
+    <string name="barcode">Print barCode</string>
+    <string name="bleselect">Seleccione el dispositivo Bluetooth</string>
+    <string name="usbselect">Seleccione el dispositivo UBB</string>
+    <string name="toast_discon_success">Se ha desconectado</string>
+    <string name="toast_discon_faile">No se pudo desconectar</string>
+    <string name="toast_present_con">no hay conexión</string>
+    <string name="send_success">Enviado con exito</string>
+    <string name="send_failed">Falló el envío</string>
+    <string name="not_con_printer">no hay conexión</string>
+    <string name="usb_pre_con">present connected Usb dev:</string>
+    <string name="con_success">Conexión exitosa</string>
+    <string name="con_failed">Connect failed</string>
+    <string name="con_has_discon">se ha perdido la conexión</string>
+    <string name="sb">Seleccionar</string>
+    <string name="start_pos_activity">Start PosPrint</string>
+    <string name="start_76_activity">Start 76 PosPrint</string>
+    <string name="start_tsc_activity">Start TSC PosPrint</string>
+    <string name="qrcode">Print QRcode</string>
+    <string name="none_ble_device">no devices are found</string>
+    <string name="none_ipaddress">pleesa input the ipaddress first!</string>
+    <string name="connect_first">please connet the printer first!</string>
+    <string name="this_is_text">This is Text!</string>
+    <string name="text_for">text for!</string>
+    <string name="error_level">error_level</string>
+    <string name="qrcode_content">input content，create QRCode</string>
+    <string name="qrcode_clear">clear</string>
+    <string name="qrcode_creat">creat</string>
+    <string name="qrcode_print">print</string>
+    <string name="qrcode_scan">scan</string>
+    <string name="none_content">please input content first！</string>
+    <string name="check_linke">checkLink</string>
+    <string name="net_connet_loss">network connect loss,please go back and connet the printer again</string>
+    <string name="self_check">self check</string>
+
+
+    <string name="zebra_technologies_corp">Zebra Technologies Corp.</string>
+    <string name="zebra_address_line_1">3 Overlook Point</string>
+    <string name="zebra_address_line_2">Lincolnshire, IL, 60029</string>
+
+    <string name="connecting_to_printer">Connecting to printer&#8230;</string>
+    <string name="connected_to_printer">Connected to printer</string>
+    <string name="no_printer_selected">No printer selected</string>
+    <string name="printer_name">Printer name:</string>
+    <string name="printer_address">Printer address:</string>
+    <string name="discovered_printers">Discovered printers</string>
+    <string name="searching_for_printers">Searching for printers&#8230;</string>
+    <string name="wrong_firmware">Printer is not set up as a PDF Virtual Device</string>
+
+    <string name="selected_a_pdf">Selected a PDF</string>
+    <string name="no_pdf_selected">No PDF selected</string>
+    <string name="pdf_name">PDF name:</string>
+    <string name="select_pdf">Select PDF</string>
+    <string name="file_path">File path:</string>
+    <string name="file_not_saved">Unable to print a file that\'s not saved on the device</string>
+    <string name="file_access_error">Unable to access that file</string>
+
+
+    <string name="print">Print</string>
+    <string name="print_failed">Print Failed:</string>
+    <string name="print_successful">File sent to printer</string>
+    <string name="printer_paused">Printer is paused</string>
+    <string name="head_open">Printer head is open</string>
+    <string name="paper_out">Printer paper is out</string>
+    <string name="cannot_print">Cannot send file to printer</string>
+    <string name="no_printer">Cannot connect to printer</string>
+    <string name="sent_to_printer">Printing...</string>
+    <string name="ready_to_print">Ready to Print</string>
+    <string name="no_zpl">Unable to change printer language to ZPL</string>
+    <string name="unable_to_print">Unable to Print</string>
+    <string name="print_succeeded">Print successful</string>
+
+</resources>
